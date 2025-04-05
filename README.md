@@ -1,0 +1,2 @@
+# Fish Farm Management System
+This project involves developing a Fish Farm Management System with a comprehensive database and access control with java spring and javafx. The system features two types of administrators (regular admin and super admin) and two types of employees (responsible for feeding and maintenance). It allows for efficient management of the farm's operations, including tracking fish health, feeding schedules, and facility maintenance, while ensuring secure and role-based access to different functionalities.
