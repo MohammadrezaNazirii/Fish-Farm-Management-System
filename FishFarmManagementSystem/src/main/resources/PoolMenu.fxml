@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="790.0" maxWidth="1535.0" minHeight="790.0" minWidth="1535.0" prefHeight="790.0" prefWidth="1535.0" style="-fx-background-color: #c4ebff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FishFarmManagementSystem.ui.PoolsUI">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="69.0" layoutX="-1.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="1538.0" />
+      <Label alignment="CENTER" layoutX="621.0" layoutY="-1.0" prefHeight="52.0" prefWidth="303.0" style="-fx-font-family: 'B Nazanin';" text="مدیریت استخرها ">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="reportTableView" layoutX="198.0" layoutY="307.0" prefHeight="454.0" prefWidth="1147.0" style="-fx-background-color: #c4ebff; -fx-border-color: #1e90ff; -fx-border-width: 4; -fx-border-radius: 5;">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="96.800048828125" text="ID" />
+            <TableColumn fx:id="otherEquipmentColumn" prefWidth="206.0" text="تجهیزات" />
+            <TableColumn fx:id="linesColumn" prefWidth="562.6666870117188" text="لاین ها" />
+            <TableColumn fx:id="sizeColumn" prefWidth="149.3333740234375" text="سایز" />
+            <TableColumn fx:id="rowNumberColumn" prefWidth="124.0" text="ردیف" />
+        </columns>
+      </TableView>
+      <Label fx:id="nameLabel" alignment="CENTER" layoutX="1258.0" layoutY="83.0" prefHeight="52.0" prefWidth="236.0" style="-fx-font-family: 'B Nazanin';">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitButton" layoutX="30.0" layoutY="93.0" mnemonicParsing="false" onAction="#exit" prefHeight="52.0" prefWidth="83.0" style="-fx-background-color: #1e90ff; -fx-font-family: 'B Nazanin';" text="خروج">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="dateLabel" alignment="CENTER" layoutX="50.0" layoutY="4.0" prefHeight="52.0" prefWidth="236.0" style="-fx-font-family: 'B Nazanin';">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1214.0" layoutY="252.0" prefHeight="52.0" prefWidth="236.0" style="-fx-font-family: 'B Nazanin';" text="استخر ها:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="209.0" layoutY="133.0" mnemonicParsing="false" onAction="#newPool" prefHeight="52.0" prefWidth="131.0" style="-fx-background-color: #1e90ff; -fx-font-family: 'B Nazanin';" text="استخر جدید">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ListView fx:id="linesList" layoutX="374.0" layoutY="100.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="179.0" prefWidth="285.0" />
+      <Label alignment="CENTER" layoutX="1156.0" layoutY="100.0" prefHeight="52.0" prefWidth="236.0" style="-fx-font-family: 'B Nazanin';" text="سایز:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sizeField" alignment="CENTER_RIGHT" layoutX="897.0" layoutY="100.0" prefHeight="52.0" prefWidth="314.0" promptText="سایز" style="-fx-background-color: #F9F9F9; -fx-font-family: 'B Nazanin';">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="580.0" layoutY="100.0" prefHeight="52.0" prefWidth="236.0" style="-fx-font-family: 'B Nazanin';" text="لاین:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1156.0" layoutY="184.0" prefHeight="52.0" prefWidth="236.0" style="-fx-font-family: 'B Nazanin';" text="تجهیزات:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="otherEquipmentField" alignment="CENTER_RIGHT" layoutX="897.0" layoutY="184.0" prefHeight="52.0" prefWidth="314.0" promptText="تجهیزات" style="-fx-background-color: #F9F9F9; -fx-font-family: 'B Nazanin';">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="209.0" layoutY="210.0" mnemonicParsing="false" onAction="#CSVReport" prefHeight="52.0" prefWidth="131.0" style="-fx-background-color: #1e90ff; -fx-font-family: 'B Nazanin';" text="خروجی CSV">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
